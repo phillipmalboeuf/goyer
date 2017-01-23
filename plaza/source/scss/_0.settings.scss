@@ -1,0 +1,54 @@
+
+// #COLORS
+
+$white: #fff;
+$black: #030303;
+$red: #d9330d;
+$blue: #cce3ec;
+$blue--dark: #82cce6;
+$grey: #e3e3e0;
+$green: #67823d;
+$yellow: #e2d5b2;
+$orange: #e3902b;
+
+$primary: $black;
+$highlight: $red;
+$secondary: $blue--dark;
+
+
+// #FONTS
+
+$body_font: "Arial Condensed", "Arial", sans-serif;
+$headings_font: "Arial Condensed", "Arial", sans-serif;
+$alternate_font: "Arial Condensed", "Arial", sans-serif;
+
+
+// #LAYOUT
+
+$base_size: 24px;
+$huge_size: 48px;
+$big_size: 36px;
+$medium_size: 20px;
+$line_height: 1.2;
+$vertical_rythm: 0.5em;
+$letter_spacing: 0.25em;
+$border_radius: 0;
+
+$number_of_columns: 12;
+$gutter: 1rem;
+$max_width: 1050px;
+
+
+// #ANIMATIONS
+
+$fast: 0.333s;
+$slow: 0.666s;
+$very_slow: 1.333s;
+
+
+// #BREAKPOINTS
+
+$small: "all and (max-device-width:750px), all and (max-width:750px)";
+$medium: "all and (max-device-width:1050px), all and (max-width:1050px)";
+$breakpoints: "medium" $medium, "small" $small;
+

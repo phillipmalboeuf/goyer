@@ -1,0 +1,24 @@
+
+{% extends "layout.html" %}
+
+{% block body_classes %}index{% endblock %}
+
+
+{% block main %}
+<div class="text_center huge_bottom js-piece" data-id="{{pieces.index._id}}">
+	<p class="small_bottom">
+		<img src="{{pieces.index.logo}}" alt="Logo" class="img--center" data-image-key="logo">
+	</p>
+
+	<p>
+		<a href="{{pieces.index.phone_link}}" target="_blank" data-link-key="phone_link"><span data-key="phone">{{pieces.index.phone}}</span></a><br>
+		<a href="{{pieces.index.email_link}}" target="_blank" data-link-key="email_link"><span data-key="email">{{pieces.index.email}}</span></a><br>
+		<a class="a--highlight" href="{{pieces.index.instagram_link}}" target="_blank" data-link-key="instagram_link"><span data-key="instagram">{{pieces.index.instagram}}</span></a>
+	</p>
+
+	<span data-piece-admin></span>
+</div>
+{% endblock %}
+
+
+
