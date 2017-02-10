@@ -34,7 +34,7 @@
 		<div class="text_right padded padded--flat_bottom"><a href="#{{list.route}}" class="overlay__close"><img src="/build/images/close.png" alt="Close"></a></div>
 
 		<img src="{{post.photo}}" class="img--center" data-content-image-key="photo" alt="Photo">
-		<div class="text_center medium_top" data-content-key="title">{{post.title|safe}}</div>
+		<div class="text_center medium_top small" data-content-key="title">{{post.title|safe}}</div>
 
 		{% elif post.is_product == true %}
 		<div class="padded white_back">
@@ -69,7 +69,7 @@
 		<div class="video_container">
 			<iframe src="" data-video-id="{{post.video_embed_id}}" frameborder="0" allowfullscreen scrolling="no"></iframe>
 		</div>
-		<div class="text_center medium_top" data-content-key="title">{{post.title|safe}}</div>
+		<div class="text_center medium_top small" data-content-key="title">{{post.title|safe}}</div>
 
 		<div class="admin_only" data-content-key="video_embed_id">{{post.video_embed_id}}</div>
 		{% endif %}
