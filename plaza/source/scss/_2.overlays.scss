@@ -65,6 +65,10 @@
 			background: transparent;
 			@include shadow(none);
 		}
+
+		&.overlay__container--no_max {
+			max-height: none;
+		}
 	}
 
 		.overlay__container__overflow {

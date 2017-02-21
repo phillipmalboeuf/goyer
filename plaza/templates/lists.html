@@ -3,14 +3,14 @@
 {% for list in lists %}
 <div class="" data-list="{{list.route}}" data-list-id="{{list._id}}">
 
-	<div class="overlay__container padded padded--thick js-piece" data-id="{{pieces.index._id}}">
+	<div class="overlay__container overlay__container--no_max padded padded--thick js-piece" data-id="{{pieces.index._id}}">
 		<div class="text_right small"><a href="{{pieces.index.other_lang_link}}" data-link-key="other_lang_link"><span data-key="other_lang">{{pieces.index.other_lang}}</span></a></div>
 
 		<h2 class="text_center"><span data-key="title">{{pieces.index.title|safe}}</span></h2>
 		<div class="medium_bottom"><span data-key="body">{{pieces.index.body|safe}}</span> <span data-piece-admin></span></div>
 
 		<div class="padded">
-			<div class="grid grid--guttered overlay__container__overflow">
+			<div class="grid grid--guttered">
 				{% for post in list.posts %}
 				<div class="col col--3of12">
 					<a href="#{{list.route}}/{{post._id}}"><img src="{{post.thumbnail}}" alt="{{post.title}} Thumbnail"></a>
